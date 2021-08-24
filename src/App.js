@@ -1,6 +1,9 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
 import { Reset } from 'styled-reset';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 import theme from './theme'
