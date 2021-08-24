@@ -18,8 +18,13 @@ export const Finder = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.colors.background};
 
-  input, Button{
+  input, Button {
     display:inline-block;
+  }
+  input {
+    width: 70%;
+    height: 27px;
+    margin-left: 20px;
   }
 `;
 export const Logo = styled.img`
@@ -27,7 +32,7 @@ width: 100%;
 height: 300px;
 `;
 export const MusicBox = styled.div`
-background-color: ${(props) => props.theme.colors.primary};
+background-color: ${(props) => props.theme.colors.background};
 width: 60vw;
 `;
 
@@ -43,6 +48,8 @@ export const CarouselTitle = styled.h1`
   color: ${(props) => props.theme.colors.text};
   font-size: 24px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
   line-height: 29px;
   margin: 16px 0;
 `;

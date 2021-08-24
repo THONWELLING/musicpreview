@@ -26,11 +26,13 @@ const Card = styled.div`
 
 
 const Title= styled.span`
+  display: flex;
+  align-item: center;
   font-family: ${(props) => props.theme.fonts.regular};
   color: #ffffff;
   font-size: 16px;
   margin-top: 10px;
-margin-left: 5px;
+  margin-left: 5px;
 `;
 const ImageCard = ({photo, title}) => {
   return (

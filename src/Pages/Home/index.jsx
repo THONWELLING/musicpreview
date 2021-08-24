@@ -4,7 +4,7 @@ import Slider from 'react-slick'
 import { Button } from '@material-ui/core'
 
 
-import logo from '../../assets/logo.jpg'
+import logo from '../../assets/logo.png'
 import music from '../../assets/music.jpg'
 import {Card} from '../../components'
 import {Container, Carousel, Finder, Logo, Wrapper, MusicBox, CarouselTitle} from './styles'
@@ -23,18 +23,18 @@ const Home = () => {
     adaptiveHeight: true,
   }
   return (
-    <Wrapper>
+    <Wrapper style={{ backgroundImage: `linear-gradient(to right, rgba(0, 224, 255, 1), 30% rgba(0, 133, 255, 1)) 70% ` }} >
       <Container>
         {/* < Header /> */}
         <Finder>
-          <h1>Finder</h1>
           <Logo src={logo} alt="logo musicpreview" />
           <>
-            <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-          
-            <Button>
-              <FcSearch />
-            </Button>
+            <div>
+            <input  type="text"  value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+              <Button>
+                <FcSearch />
+              </Button>
+            </div>
           </>
           <CarouselTitle>Find More Songs</CarouselTitle>
           <Carousel {... settings}>
@@ -52,7 +52,8 @@ const Home = () => {
           </Carousel>
         </Finder>
       </Container>
-       <MusicBox />
+       <MusicBox>
+       </MusicBox>
     </Wrapper>
   );
 }
