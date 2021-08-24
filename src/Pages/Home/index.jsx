@@ -18,8 +18,8 @@ const Home = () => {
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     adaptiveHeight: true,
   }
   return (
@@ -38,17 +38,17 @@ const Home = () => {
           </>
           <CarouselTitle>Find More Songs</CarouselTitle>
           <Carousel {... settings}>
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
-            <Card photo={music} />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
+            <Card photo={music} title="algum nome " />
           </Carousel>
         </Finder>
       </Container>
