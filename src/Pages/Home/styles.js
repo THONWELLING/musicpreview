@@ -20,11 +20,15 @@ export const Finder = styled.section`
 
   input, Button {
     display:inline-block;
+    border-radius: 6px;
+    margin-left: 20px;
   }
   input {
     width: 70%;
     height: 27px;
-    margin-left: 20px;
+  }
+  button {
+    border: 2px solid #00000017;
   }
 `;
 export const Logo = styled.img`
@@ -52,4 +56,20 @@ export const CarouselTitle = styled.h1`
   justify-content: center;
   line-height: 29px;
   margin: 16px 0;
+`;
+
+export const  Header = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  width: 100%;
+  height: 125px;
+  border-radius: 8px;
+  background-color: url(${(props) => props.theme.colors.primary});
+   h1 {
+     font-size: 60px;
+     color: #eeeee;
+     margin-top: 10px;
+   }
+
 `;
