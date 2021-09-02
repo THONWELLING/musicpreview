@@ -26,8 +26,6 @@ const Card = styled.div`
 
 
 const Title= styled.span`
-  display: flex;
-  align-item: center;
   font-family: ${(props) => props.theme.fonts.regular};
   color: #ffffff;
   font-size: 16px;
